@@ -1,8 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Navbar } from './components';
+import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 
 function App() {
@@ -10,10 +10,12 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Route exact path="/" component={Home} />
-        {/* <Route path="/tier1" component={Tier1} /> */}
-        {/* <Route path="/tier2" component={Tier2} /> */}
-        <Footer />
+        <Routes>
+          <Route exact path="/" component={Home} />
+          {/* <Route path="/tier1" component={Tier1} /> */}
+          {/* <Route path="/tier2" component={Tier2} /> */}
+        </Routes>
+          {/* <Footer /> */}
       </div>
     </Router>
   );
