@@ -1,5 +1,11 @@
 :root {
-  --header-footer-hfonts: #4882b4;
+  --darker: #4882b4;
   --lighter: #cadae6;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--lighter);
+}
