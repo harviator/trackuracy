@@ -27,4 +27,5 @@ export default App;
 
 /* Notes:
   -Pages aren't being rendered.
+  -Collapsible navbar isn't collapsing on selection.
 */
