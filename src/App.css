@@ -1,6 +1,7 @@
 :root {
   --darker: #4882b4;
   --lighter: #cadae6;
+  --white: #fff;
 }
 
 html, body {
@@ -8,4 +9,8 @@ html, body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--lighter);
+}
+
+header {
+  background-color: var(--white);
 }
