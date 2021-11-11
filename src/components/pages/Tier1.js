@@ -1,11 +1,11 @@
 import React from "react";
 
-function Home(props) {
+function Tier1(props) {
   return (
     <div style={{ height: '95vh' }}>
-      <h1>Home</h1>
+      <h1>Tier 1</h1>
     </div>
   );
 }
 
-export default Home;
+export default Tier1;

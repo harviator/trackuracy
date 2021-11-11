@@ -2,6 +2,7 @@
   --darker: #4882b4;
   --lighter: #cadae6;
   --white: #fff;
+  --black: #000;
 }
 
 html, body {
@@ -9,8 +10,22 @@ html, body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--lighter);
+  color: var(--black);
 }
 
+/* Element Selectors */
+
 header {
+  padding: 0px 8px;
   background-color: var(--white);
 }
+
+/* Class Selectors */
+
+/* .menu {
+  margin-left: 10px;
+  padding: 5px;
+  border: 2px solid red;
+  text-decoration: none;
+  color: var(--black);
+} */
