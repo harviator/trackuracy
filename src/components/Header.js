@@ -34,8 +34,3 @@ function Header(props) {
 }
 
 export default Header;
-
-/* Notes:
-    - Collapsible navbar isn't collapsing on selection
-    -If I swtich back to "Link" I need - className={location.pathname === "/tier2" ? "activemenu menu" : "menu"}
-*/
