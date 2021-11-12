@@ -21,10 +21,10 @@ function Header(props) {
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
                         <Nav.Link as={Link} to="/tier1">
-                            Tier 1
+                            Tier 1 Overview
                         </Nav.Link>
                         <Nav.Link as={Link} to="/tier2">
-                            Tier 2
+                            Tier 2 Overview
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

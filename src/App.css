@@ -29,3 +29,8 @@ header {
   text-decoration: none;
   color: var(--black);
 } */
+
+/* ID Selectors */
+#home {
+  background-color: var(--white);
+}

@@ -13,9 +13,9 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/tier1" component={Tier1} />
-          <Route path="/tier2" component={Tier2} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/tier1" element={<Tier1 />} />
+          <Route exact path="/tier2" element={<Tier2 />} />
         </Routes>
           {/* <Footer /> */}
       </div>
@@ -26,6 +26,5 @@ function App() {
 export default App;
 
 /* Notes:
-  -Pages aren't being rendered.
   -Collapsible navbar isn't collapsing on selection.
 */
