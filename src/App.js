@@ -25,3 +25,8 @@ function App() {
 }
 
 export default App;
+
+/* Notes:
+- Footer elements horizontal
+- Link the JVCKenwood logo to website in footer
+*/

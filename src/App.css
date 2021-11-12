@@ -31,10 +31,6 @@ footer {
   font-size: 10px;
 }
 
-footer > img {
-  height: 10px;
-}
-
 /* Class Selectors */
 
 /* .menu {
@@ -48,4 +44,8 @@ footer > img {
 /* ID Selectors */
 #home {
   background-color: var(--white);
+}
+
+#jvckenwood {
+  height: 10px;
 }

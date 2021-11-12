@@ -9,10 +9,10 @@ function Header(props) {
         <header>
             <Navbar collapseOnSelect expand="sm">
                 <Navbar.Brand>
-                    <Nav.Link as={Link} to="/">
+                    <Nav.Link as={Link} to="/" className="p-0">
                         <img
                             src={trackuracyLogo}
-                            height="55"
+                            height="61"
                             alt="Track Accuracy Logo"
                         />
                     </Nav.Link>
