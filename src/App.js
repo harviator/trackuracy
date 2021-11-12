@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/tier1" element={<Tier1 />} />
           <Route exact path="/tier2" element={<Tier2 />} />
         </Routes>
-          {/* <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </Router>
   );
