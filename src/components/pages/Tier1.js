@@ -2,7 +2,7 @@ import React from "react";
 
 function Tier1(props) {
   return (
-    <div style={{ height: '95vh' }}>
+    <div>
       <h1>Tier 1</h1>
     </div>
   );

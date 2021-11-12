@@ -12,7 +12,7 @@ function Header(props) {
                     <Nav.Link as={Link} to="/">
                         <img
                             src={trackuracyLogo}
-                            height="30"
+                            height="55"
                             alt="Track Accuracy Logo"
                         />
                     </Nav.Link>

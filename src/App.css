@@ -18,6 +18,21 @@ html, body {
 header {
   padding: 0px 8px;
   background-color: var(--white);
+  border: 2px solid red;
+}
+
+/* img {
+  margin: 0;
+  padding: 0;
+} */
+
+footer {
+  border: 2px solid red;
+  font-size: 10px;
+}
+
+footer > img {
+  height: 10px;
 }
 
 /* Class Selectors */
