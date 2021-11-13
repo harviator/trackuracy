@@ -27,8 +27,17 @@ header {
 } */
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  padding: 0 8px 0 8px;
   border: 2px solid red;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* Class Selectors */
@@ -47,5 +56,5 @@ footer {
 }
 
 #jvckenwood {
-  height: 10px;
+  height: 12px;
 }
