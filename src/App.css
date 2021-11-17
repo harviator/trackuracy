@@ -18,7 +18,19 @@ html, body {
 header {
   padding: 0px 8px;
   background-color: var(--white);
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+
+h3 {
+  color: var(--darker);
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bolder;
+}
+
+h6 {
+  color: var(--darker);
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
 }
 
 /* img {
@@ -36,7 +48,7 @@ footer {
   width: 100%;
   background-color: var(--white);
   padding: 0 8px 0 8px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-size: 12px;
 }
 
@@ -53,6 +65,8 @@ footer {
 /* ID Selectors */
 #home {
   background-color: var(--white);
+  margin: 0px 50px;
+  padding: 8px 8px 50px 8px;
 }
 
 #jvckenwood {
