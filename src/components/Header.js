@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
-import trackuracyLogo from "../assets/images/trackuracy-logo.png"
+import trackuracyMain from "../assets/images/trackuracy-main.png";
 
 function Header(props) {
 
@@ -11,9 +11,9 @@ function Header(props) {
                 <Navbar.Brand>
                     <Nav.Link as={Link} to="/" className="p-0">
                         <img
-                            src={trackuracyLogo}
-                            height="61"
-                            alt="Track Accuracy Logo"
+                            src={trackuracyMain}
+                            height="49"
+                            alt="Trackuracy Logo"
                         />
                     </Nav.Link>
                 </Navbar.Brand>

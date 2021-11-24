@@ -1,16 +1,19 @@
 :root {
-  --darker: #4882b4;
-  --lighter: #cadae6;
+  --lghtblue: #87C1f5;
+  --midblue: #0090DC;
+  --dkblue: #0061AB;
+  --purple: #AB74C3;
   --white: #fff;
-  --black: #000;
+  --text: #000230;
 }
 
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--lighter);
-  color: var(--black);
+  font-family: 'Acumin Pro', sans-serif;
+  background-image: url(./assets/images/trackuracy-web-box.jpg);
+  background-color: var(--lghtblue);
+  color: var(--text);
 }
 
 /* Element Selectors */
@@ -22,14 +25,12 @@ header {
 }
 
 h3 {
-  color: var(--darker);
-  font-family: 'Oxygen', sans-serif;
+  color: var(--dkblue);
   font-weight: bolder;
 }
 
 h6 {
-  color: var(--darker);
-  font-family: 'Oxygen', sans-serif;
+  color: var(--dkblue);
   font-weight: bold;
 }
 
@@ -69,6 +70,18 @@ footer {
   padding: 8px 8px 50px 8px;
 }
 
-#jvckenwood {
-  height: 12px;
+/* #tackuracyMain {
+  border: red solid 2px;
+  max-height: 52px;
+} */
+
+#kenwoodMain {
+  height: 25px;
 }
+
+/* Media Queries */
+/* @media screen and (max-width: 800px) {
+  #tackuracyMain {
+    height: 52px;
+  }
+} */
