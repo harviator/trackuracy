@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Trackuracy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+
+
+### Description
+This is my first real project working with a client to create a front-end microsite for a product.  Due to the user story below, this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) as it achieved the functionality they were looking for.
+
+### User Story
+```md
+As A user looking at our product
+I WANT a single page website that reduces scrolling and navigating as much as possible
+SO THAT I can quickly and efficiently view the product and it's features
+```
 
 ## Available Scripts
 

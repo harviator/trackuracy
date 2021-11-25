@@ -4,9 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/pages/Home';
-import Tier1 from './components/pages/Tier1';
-import Tier2 from './components/pages/Tier2';
+import Whytrackuracy from './components/pages/Whytrackuracy';
+import Customizecoverage from './components/pages/Customizecoverage';
+import Findoutmore from './components/pages/Findoutmore';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/tier1" element={<Tier1 />} />
-          <Route exact path="/tier2" element={<Tier2 />} />
+          <Route exact path="/whytrackuracy" element={<Whytrackuracy />} />
+          <Route exact path="/customizecoverage" element={<Customizecoverage />} />
+          <Route exact path="/findoutmore" element={<Findoutmore />} />
         </Routes>
         <Footer />
       </div>

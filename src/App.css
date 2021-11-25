@@ -13,16 +13,13 @@ html, body {
   font-family: 'Acumin Pro', sans-serif;
   background-image: url(./assets/images/trackuracy-web-box.jpg);
   background-color: var(--lghtblue);
+  /* background-position: center; /* All this stuff is causing the background to be blurry */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   color: var(--text);
 }
 
 /* Element Selectors */
-
-header {
-  padding: 0px 8px;
-  background-color: var(--white);
-  /* border: 2px solid red; */
-}
 
 h3 {
   color: var(--dkblue);
@@ -47,6 +44,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 20px;
   background-color: var(--white);
   padding: 0 8px 0 8px;
   /* border: 2px solid red; */
@@ -54,6 +52,12 @@ footer {
 }
 
 /* Class Selectors */
+
+.pages {
+  background-color: var(--white);
+  margin: 0vh 10vw 0vh 10vw;
+  padding: 75px 10px 25px 10px;
+}
 
 /* .menu {
   margin-left: 10px;
@@ -64,10 +68,10 @@ footer {
 } */
 
 /* ID Selectors */
-#home {
+
+#navbar {
   background-color: var(--white);
-  margin: 0px 50px;
-  padding: 8px 8px 50px 8px;
+  padding: 0px 8px;
 }
 
 /* #tackuracyMain {

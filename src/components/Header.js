@@ -7,7 +7,7 @@ function Header(props) {
 
     return (
         <header>
-            <Navbar collapseOnSelect expand="sm">
+            <Navbar fixed="top" collapseOnSelect expand="sm" id="navbar">
                 <Navbar.Brand>
                     <Nav.Link as={Link} to="/" className="p-0">
                         <img
@@ -20,11 +20,17 @@ function Header(props) {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link as={Link} to="/tier1" href="/tier1">
-                            Tier 1 Overview
+                        <Nav.Link as={Link} to="/" href="/">
+                            Home
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/tier2" href="/tier2">
-                            Tier 2 Overview
+                        <Nav.Link as={Link} to="/whytrackuracy" href="/whytrackuracy">
+                            Why Trackuracy?
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/customizecoverage" href="/customizecoverage">
+                            Customize Your Coverage
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/findoutmore" href="/findoutmore">
+                            Find Out More
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

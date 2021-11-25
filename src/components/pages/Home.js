@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 
 function Home(props) {
   return (
-    <div id="home">
+    <div className="pages">
       <h3>FEATURES</h3>
       <p>With Trackuracy, you can improve safety by tracking assets within your buildings, across all your campus locations, and in between
 buildings. Even while taking to the road in company vehicles,
@@ -16,7 +16,6 @@ tracking. Best of all, it happens within a single application.</p>
       <Container>
         <Image
           src={rtls}
-          // height="61"
           alt="Track Accuracy Logo"
           fluid
         />
