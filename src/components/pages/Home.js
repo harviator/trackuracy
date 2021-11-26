@@ -1,10 +1,16 @@
 import React from "react";
+// import TrackuracyWebBox from "../../assets/images/trackuracy-web-box.jpg";
 import rtls from "../../assets/images/rtls.png";
 import Image from 'react-bootstrap/Image'
 
 function Home(props) {
   return (
     <div className="pages">
+      {/* <Image src={TrackuracyWebBox} fluid rounded/> */}
+      <div className="hero t-web-box-img">
+        <h1>Trackuracy</h1>
+        <p>Helping you get the right resources to the right place at the right time.</p>
+      </div>
       <h3>FEATURES</h3>
       <p>
         With Trackuracy, you can improve safety by tracking assets within your buildings, across all your campus locations, and in between

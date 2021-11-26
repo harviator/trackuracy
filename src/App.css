@@ -11,15 +11,16 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Acumin Pro', sans-serif;
-  background-image: url(./assets/images/trackuracy-web-box.jpg);
-  background-color: var(--lghtblue);
-  /* background-position: center; /* All this stuff is causing the background to be blurry */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  /* background-image: url(./assets/images/trackuracy-web-box.jpg); */
+  background-color: var(--white);
   color: var(--text);
 }
 
 /* Element Selectors */
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
 
 h3 {
   color: var(--dkblue);
@@ -30,11 +31,6 @@ h6 {
   color: var(--dkblue);
   font-weight: bold;
 }
-
-/* img {
-  margin: 0;
-  padding: 0;
-} */
 
 footer {
   display: flex;
@@ -47,7 +43,6 @@ footer {
   height: 20px;
   background-color: var(--white);
   padding: 0 8px 0 8px;
-  /* border: 2px solid red; */
   font-size: 12px;
 }
 
@@ -57,6 +52,23 @@ footer {
   background-color: var(--white);
   margin: 0vh 10vw 0vh 10vw;
   padding: 75px 10px 25px 10px;
+}
+
+.hero {
+  background-color: var(--lghtblue);
+  height: 600px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 100px;
+  justify-content: center;
+  color: white;
+}
+
+.t-web-box-img {
+  background-image: url(./assets/images/trackuracy-web-box.jpg);
+  background-size: cover;
 }
 
 /* ID Selectors */
@@ -71,3 +83,13 @@ footer {
 }
 
 /* Media Queries */
+@media screen and (max-width: 500px) {
+  .pages {
+    margin: 0vh 5vw 0vh 5vw;
+  }
+  
+  .hero {
+    height: 400px;
+    padding: 20px;
+  }
+}

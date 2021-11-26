@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/pages/Home';
-import Whytrackuracy from './components/pages/Whytrackuracy';
-import Customizecoverage from './components/pages/Customizecoverage';
-import Findoutmore from './components/pages/Findoutmore';
+import About from './components/pages/About';
+import Coverage from './components/pages/Coverage';
+import More from './components/pages/More';
 import Footer from './components/Footer';
 
 
@@ -17,9 +17,9 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/whytrackuracy" element={<Whytrackuracy />} />
-          <Route exact path="/customizecoverage" element={<Customizecoverage />} />
-          <Route exact path="/findoutmore" element={<Findoutmore />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/coverage" element={<Coverage />} />
+          <Route exact path="/more" element={<More />} />
         </Routes>
         <Footer />
       </div>

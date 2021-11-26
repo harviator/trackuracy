@@ -1,6 +1,6 @@
 import React from "react";
 
-function Findoutmore(props) {
+function More(props) {
   return (
     <div className="pages">
       <h1>Find Out More!</h1>
@@ -8,4 +8,4 @@ function Findoutmore(props) {
   );
 }
 
-export default Findoutmore;
+export default More;

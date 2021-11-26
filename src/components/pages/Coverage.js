@@ -1,6 +1,6 @@
 import React from "react";
 
-function Customizecoverage(props) {
+function Coverage(props) {
   return (
     <div className="pages">
       <h1>Customize Your Coverage</h1>
@@ -8,4 +8,4 @@ function Customizecoverage(props) {
   );
 }
 
-export default Customizecoverage;
+export default Coverage;

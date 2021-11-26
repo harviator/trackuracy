@@ -1,6 +1,6 @@
 import React from "react";
 
-function Whytrackuracy(props) {
+function About(props) {
   return (
     <div className="pages">
       <h1>Why Trackuracy?</h1>
@@ -8,4 +8,4 @@ function Whytrackuracy(props) {
   );
 }
 
-export default Whytrackuracy;
+export default About;
