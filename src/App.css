@@ -59,14 +59,6 @@ footer {
   padding: 75px 10px 25px 10px;
 }
 
-/* .menu {
-  margin-left: 10px;
-  padding: 5px;
-  border: 2px solid red;
-  text-decoration: none;
-  color: var(--black);
-} */
-
 /* ID Selectors */
 
 #navbar {
@@ -74,18 +66,8 @@ footer {
   padding: 0px 8px;
 }
 
-/* #tackuracyMain {
-  border: red solid 2px;
-  max-height: 52px;
-} */
-
 #kenwoodMain {
   height: 25px;
 }
 
 /* Media Queries */
-/* @media screen and (max-width: 800px) {
-  #tackuracyMain {
-    height: 52px;
-  }
-} */

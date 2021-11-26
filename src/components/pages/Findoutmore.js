@@ -3,7 +3,7 @@ import React from "react";
 function Findoutmore(props) {
   return (
     <div className="pages">
-      <h1>Customize Your Coverage</h1>
+      <h1>Find Out More!</h1>
     </div>
   );
 }
