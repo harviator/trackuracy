@@ -11,7 +11,8 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Acumin Pro', sans-serif;
-  /* background-image: url(./assets/images/trackuracy-web-box.jpg); */
+  background-image: url(./assets/images/trackuracy-web-box.jpg);
+  background-position: left;
   background-color: var(--white);
   color: var(--text);
 }
@@ -20,6 +21,14 @@ html, body {
 h1 {
   font-size: 40px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+  /* font-weight: bold; */
+  color: var(--midblue);
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -48,10 +57,15 @@ footer {
 
 /* Class Selectors */
 
-.pages {
+.homepage {
   background-color: var(--white);
-  margin: 0vh 10vw 0vh 10vw;
-  padding: 75px 10px 25px 10px;
+  padding: 75px 10vw 25px 10vw;
+}
+
+.pages {
+  padding: 75px 10vw 25px 15px;
+  background-color: var(--white);
+  margin-left: 10vw;
 }
 
 .hero {

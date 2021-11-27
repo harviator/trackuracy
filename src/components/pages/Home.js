@@ -1,11 +1,10 @@
 import React from "react";
-// import TrackuracyWebBox from "../../assets/images/trackuracy-web-box.jpg";
 import rtls from "../../assets/images/rtls.png";
 import Image from 'react-bootstrap/Image'
 
 function Home(props) {
   return (
-    <div className="pages">
+    <div className="homepage">
 
       <div className="hero t-web-box-img mb-5">
         <h1>Trackuracy</h1>
