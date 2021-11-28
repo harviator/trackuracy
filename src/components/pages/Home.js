@@ -1,12 +1,12 @@
 import React from "react";
-import rtls from "../../assets/images/rtls.png";
+import Rtls from "../../assets/images/rtls.png";
 import Image from 'react-bootstrap/Image'
 
 function Home(props) {
   return (
     <div className="homepage">
 
-      <div className="hero t-web-box-img mb-5">
+      <div className="hero t-web-box-img mb-5" style={{height: "82vh"}}>
         <h1>Trackuracy</h1>
         <p>Helping you get the right resources to the right place at the right time.</p>
       </div>
@@ -64,7 +64,7 @@ function Home(props) {
 
       <Image
         className="img-fluid mx-auto d-block"
-        src={rtls}
+        src={Rtls}
         alt="Real Time Location System Diagram"
       />
 
