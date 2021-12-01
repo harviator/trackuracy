@@ -7,9 +7,9 @@
   --text: #000230;
 }
 
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 html, body {
   height: 100%;
@@ -94,7 +94,12 @@ footer {
 
 #navbar {
   background-color: var(--white);
-  padding: 0px 8px;
+  padding: 2px 8px;
+  border-bottom: 1px solid var(--midblue);
+}
+
+#trackuracy-main {
+  height: 30px;
 }
 
 #kenwoodMain {
@@ -102,6 +107,7 @@ footer {
 }
 
 /* Media Queries */
+
 @media screen and (max-width: 500px) {
   .pages {
     margin: 0vh 5vw 0vh 5vw;

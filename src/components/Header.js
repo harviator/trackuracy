@@ -12,7 +12,7 @@ function Header(props) {
                     <Nav.Link as={Link} to="/" className="p-0">
                         <img
                             src={trackuracyMain}
-                            height="30"
+                            id="trackuracy-main"
                             alt="Trackuracy Logo"
                         />
                     </Nav.Link>
@@ -29,6 +29,9 @@ function Header(props) {
                         <Nav.Link as={Link} to="/coverage" href="/coverage">
                             Customize Your Coverage
                         </Nav.Link>
+                        <Nav.Link as={Link} to="/case" href="/case">
+                            Case Studies
+                        </Nav.Link>
                         <Nav.Link as={Link} to="/more" href="/more">
                             Find Out More
                         </Nav.Link>
@@ -40,8 +43,3 @@ function Header(props) {
 }
 
 export default Header;
-
-/*
-Navbar:
-    fixed="top" collapseOnSelect expand="sm" id="navbar" className="pt-1 pb-1 border-bottom"
-*/
