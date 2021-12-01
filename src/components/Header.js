@@ -7,7 +7,7 @@ function Header(props) {
 
     return (
         <header>
-            <Navbar fixed="top" collapseOnSelect expand="sm" id="navbar" className="pt-1 pb-1 border-bottom">
+            <Navbar id="navbar" collapseOnSelect expand="lg">
                 <Navbar.Brand>
                     <Nav.Link as={Link} to="/" className="p-0">
                         <img
@@ -24,13 +24,13 @@ function Header(props) {
                             Home
                         </Nav.Link>
                         <Nav.Link as={Link} to="/about" href="/about">
-                            About
+                            Why Trackuracy?
                         </Nav.Link>
                         <Nav.Link as={Link} to="/coverage" href="/coverage">
-                            Coverage
+                            Customize Your Coverage
                         </Nav.Link>
                         <Nav.Link as={Link} to="/more" href="/more">
-                            More
+                            Find Out More
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -40,3 +40,8 @@ function Header(props) {
 }
 
 export default Header;
+
+/*
+Navbar:
+    fixed="top" collapseOnSelect expand="sm" id="navbar" className="pt-1 pb-1 border-bottom"
+*/

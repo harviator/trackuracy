@@ -7,17 +7,22 @@
   --text: #000230;
 }
 
+* {
+  border: 1px solid red;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   font-family: 'Acumin Pro', sans-serif;
-  background-image: url(./assets/images/trackuracy-web-box.jpg);
-  background-position: left;
+  /* background-image: url(./assets/images/trackuracy-web-box.jpg); */
+  /* background-position: left; */
   background-color: var(--white);
   color: var(--text);
 }
 
 /* Element Selectors */
+
 h1 {
   font-size: 40px;
   font-weight: bold;
