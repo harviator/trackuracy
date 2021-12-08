@@ -1,4 +1,5 @@
 :root {
+  --lghtrblue: #e7f3fd;
   --lghtblue: #87C1f5;
   --midblue: #0090DC;
   --dkblue: #0061AB;
@@ -48,14 +49,14 @@ h6 {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 20px;
-  background-color: var(--white);
+  background-color: var(--lghtrblue);
+  border-top: 1px solid var(--purple);
   padding: 0 8px 0 8px;
   font-size: 12px;
 }
@@ -64,30 +65,31 @@ footer {
 
 .homepage {
   background-color: var(--white);
-  padding: 75px 10vw 25px 10vw;
+  padding: 55px 0px 10vh 0px;
 }
 
 .pages {
-  padding: 75px 10vw 25px 15px;
+  padding: 75px 10vw 10vh 15px;
   background-color: var(--white);
   margin-left: 10vw;
 }
 
 .hero {
-  background-color: var(--lghtblue);
-  height: 600px;
+  background: var(--midblue) url(./assets/images/trackuracy-hero.jpg) no-repeat;
+  background-size: cover;
+  height: 339px;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 100px;
-  justify-content: center;
+  align-items: flex-end;
+  padding: 0 20px;
+  justify-content: flex-end;
   color: white;
+  font-size: 1.5rem;
 }
 
-.t-web-box-img {
-  background-image: url(./assets/images/trackuracy-web-box.jpg);
-  background-size: cover;
+.section {
+  margin: 75px 10vw 25px 10vw;
+  background-color: var(--lghtblue);
 }
 
 /* ID Selectors */
@@ -96,14 +98,17 @@ footer {
   background-color: var(--white);
   padding: 2px 8px;
   border-bottom: 1px solid var(--midblue);
+  width: 100%;
+  position: fixed;
 }
 
 #trackuracy-main {
   height: 30px;
 }
 
-#kenwoodMain {
-  height: 25px;
+#kenwoodMain, #facebook, #instagram, #linkedin, #twitter, #youtube {
+  margin: 5px;
+  height: 30px;
 }
 
 /* Media Queries */
@@ -114,7 +119,6 @@ footer {
   }
   
   .hero {
-    height: 400px;
     padding: 20px;
   }
 }

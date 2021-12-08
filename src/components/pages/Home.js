@@ -6,22 +6,23 @@ function Home(props) {
   return (
     <div className="homepage">
 
-      <div className="hero t-web-box-img mb-5" style={{height: "82vh"}}>
-        <h1>Trackuracy</h1>
+      <div className="hero">
         <p>Helping you get the right resources to the right place at the right time.</p>
       </div>
 
-      <p>
-        With Trackuracy, you can improve safety by tracking assets within your buildings, across all your campus locations, and in between buildings. Even while taking to the road in company vehicles, your view switches seamlessly between indoor and outdoor tracking. Best of all, it happens within a single application.
-      </p>
+      <div className="section">
+        <p>
+          With Trackuracy, you can improve safety by tracking assets within your buildings, across all your campus locations, and in between buildings. Even while taking to the road in company vehicles, your view switches seamlessly between indoor and outdoor tracking. Best of all, it happens within a single application.
+        </p>
 
-      <p>
-        In our fast-moving world, knowing the locations of the assets you rely on is critical. An integrated solution should work anywhere you need it to - indoors or outdoors. It’s common for companies to use GPS to locate assets outdoors. However, satellite signals typically are not strong enough to penetrate the roof of a building or through walls to provide accurate information for indoor location. GPS is generally inadequate for precise indoor location, performs poorly in multilevel structures, and can quickly drain a device’s battery. For in-building positioning, you need a solution that is designed specifically for this purpose.
-      </p>
+        <p>
+          In our fast-moving world, knowing the locations of the assets you rely on is critical. An integrated solution should work anywhere you need it to - indoors or outdoors. It’s common for companies to use GPS to locate assets outdoors. However, satellite signals typically are not strong enough to penetrate the roof of a building or through walls to provide accurate information for indoor location. GPS is generally inadequate for precise indoor location, performs poorly in multilevel structures, and can quickly drain a device’s battery. For in-building positioning, you need a solution that is designed specifically for this purpose.
+        </p>
 
-      <p>
-        You need Trackuracy, the Real Time Location System (RTLS) from JVCKENWOOD. Trackuracy integrates indoor and outdoor tracking with KENWOOD radio communication systems and provides the tools you need to secure your environment.
-      </p>
+        <p>
+          You need Trackuracy, the Real Time Location System (RTLS) from JVCKENWOOD. Trackuracy integrates indoor and outdoor tracking with KENWOOD radio communication systems and provides the tools you need to secure your environment.
+        </p>
+      </div>
 
       <div
         className="video mt-5 mb-5"
