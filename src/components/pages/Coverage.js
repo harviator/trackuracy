@@ -15,7 +15,7 @@ function Coverage(props) {
       <Image
         className="img-fluid mx-auto d-block"
         src={CustomizeCoverage}
-        alt="Real Time Location System Diagram"
+        alt="Coverage Diagram"
       />
 
       <h3>DIFFERENT MARKETS, DIFFERENT NEEDS</h3>

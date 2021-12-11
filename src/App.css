@@ -16,9 +16,6 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Acumin Pro', sans-serif;
-  /* background-image: url(./assets/images/trackuracy-web-box.jpg); */
-  /* background-position: left; */
-  background-color: var(--white);
   color: var(--text);
 }
 
@@ -55,17 +52,16 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(--lghtrblue);
   border-top: 1px solid var(--purple);
   padding: 0 8px 0 8px;
   font-size: 12px;
+  background-color: var(--white);
 }
 
 /* Class Selectors */
 
 .homepage {
-  background-color: var(--white);
-  padding: 55px 0px 10vh 0px;
+  padding: 45px 0px 10vh 0px;
 }
 
 .pages {
@@ -75,21 +71,64 @@ footer {
 }
 
 .hero {
+  position: relative;
+  height: 339px;
+  padding: 0 20px;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  background-color: rgba(0, 97, 171, 0.7);
+  color: #fff;
+  padding: 1vh 5vw;
+}
+
+/* 
+Hero Image
+
+.hero {
   background: var(--midblue) url(./assets/images/trackuracy-hero.jpg) no-repeat;
   background-size: cover;
   height: 339px;
-  border-radius: 15px;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   padding: 0 20px;
   justify-content: flex-end;
   color: white;
   font-size: 1.5rem;
+  text-align: right;
+} */
+
+.content {
+  margin: 20px 5vw 25px 5vw;
+  /* padding: 5vh 5vw; */
+  border: 1px solid var(--purple);
+  /* background-color: var(--lghtblue); */
 }
 
-.section {
-  margin: 75px 10vw 25px 10vw;
-  background-color: var(--lghtblue);
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  flex-basis: auto;
+  border: 1px solid var(--purple);
+  margin: 10px 0;
+  width: 100%;
 }
 
 /* ID Selectors */
@@ -100,10 +139,26 @@ footer {
   border-bottom: 1px solid var(--midblue);
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 #trackuracy-main {
   height: 30px;
+}
+
+#trackuracy {
+  width: 30%;
+}
+
+#video {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 #kenwoodMain, #facebook, #instagram, #linkedin, #twitter, #youtube {
@@ -117,8 +172,8 @@ footer {
   .pages {
     margin: 0vh 5vw 0vh 5vw;
   }
-  
-  .hero {
-    padding: 20px;
+
+  #trackuracy {
+    width: 60%;
   }
 }
