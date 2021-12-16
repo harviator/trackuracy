@@ -29,7 +29,6 @@ h1 {
 h2 {
   font-size: 50px;
   color: var(--midblue);
-  padding-bottom: 20px;
 }
 
 h3 {
@@ -63,11 +62,12 @@ footer {
 }
 
 .pages {
-  padding: 75px 10vw 10vh 15px;
+  padding: 75px 5vw 10vh 5vw;
   background-color: var(--white);
-  margin-left: 10vw;
+  border: 1px solid red;
 }
 
+/* Class Selectors For Home Page */
 .hero {
   position: relative;
   height: 339px;
@@ -164,6 +164,60 @@ Hero Image
   border-radius: 5px;
 }
 
+/* Class Selectors For About Page */
+.about-content {
+  display: flex;
+}
+
+.about-text, .about-images {
+  width: 50%;
+}
+
+.about-text h3 {
+  margin: 20px 0px;
+}
+
+.about-text ul {
+  background-color: var(--lghtrblue);
+  border-radius: 5px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-gallery li {
+  flex: 1 1 125px;
+  margin: 3px;
+}
+
+/* .column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+  border: 1px solid green;
+} */
+
+.about-gallery img {
+  object-fit: cover;
+  /* margin-top: 8px; */
+  height: 100%;
+  /* vertical-align: middle; */
+  width: 100%;
+}
+
 /* ID Selectors */
 
 #navbar {
@@ -208,10 +262,6 @@ Hero Image
 /* Media Queries */
 
 @media screen and (max-width: 500px) {
-  .pages {
-    margin: 0vh 5vw 0vh 5vw;
-  }
-
   #trackuracy {
     width: 60%;
   }
@@ -238,5 +288,13 @@ Hero Image
 
   .tracking-text, #rtls {
     width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-images {
+    display: none;
   }
 }

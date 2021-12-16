@@ -1,9 +1,8 @@
 import React from "react";
 import Mine from "../../assets/video/mine.mp4";
-// import Airport from "../../assets/images/airports.jpg";
 import Rtls from "../../assets/images/rtls.png";
 import Trackuracy from "../../assets/images/trackuracy-white.png";
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 
 function Home(props) {
   return (
