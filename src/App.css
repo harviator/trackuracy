@@ -28,9 +28,7 @@ h1 {
 
 h2 {
   font-size: 50px;
-  /* font-weight: bold; */
   color: var(--midblue);
-  /* padding-top: 10px; */
   padding-bottom: 20px;
 }
 
@@ -82,7 +80,6 @@ footer {
   left: 0;
   z-index: -1;
   width: 100%;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -112,23 +109,59 @@ Hero Image
 
 .content {
   margin: 20px 5vw 25px 5vw;
-  /* padding: 5vh 5vw; */
-  border: 1px solid var(--purple);
-  /* background-color: var(--lghtblue); */
+  text-align: justify;
 }
 
 .intro-content {
   display: flex;
+}
+
+.intro-text {
+  width: 50%;
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .box {
-  flex-basis: auto;
-  border: 1px solid var(--purple);
-  margin: 10px 0;
-  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--lghtrblue);
+  border-radius: 5px;
+}
+
+.box-4 {
+  background: #87C1f5 url(./assets/images/airports.jpg) no-repeat 50% 60%;
+  background-size: cover;
+  width: 50%;
+}
+
+.video {
+  margin: 10px 5px;
+}
+
+.tracking-content {
+  display: flex;
+}
+
+.tracking-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+}
+
+.tracking-text h3 {
+  margin: 10px 0px;
+}
+
+.tracking-text p {
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--lghtrblue);
+  border-radius: 5px;
 }
 
 /* ID Selectors */
@@ -161,6 +194,12 @@ Hero Image
   object-fit: cover;
 }
 
+#rtls {
+  width: 50%;
+  margin: 5px;
+  padding: 10px;
+}
+
 #kenwoodMain, #facebook, #instagram, #linkedin, #twitter, #youtube {
   margin: 5px;
   height: 30px;
@@ -175,5 +214,29 @@ Hero Image
 
   #trackuracy {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .intro-content {
+    flex-direction: column;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+
+  .box-4 {
+    height: 300px;
+    width: auto;
+  }
+
+  .tracking-content {
+    flex-direction: column;
+  }
+
+  .tracking-text, #rtls {
+    width: 100%;
   }
 }
