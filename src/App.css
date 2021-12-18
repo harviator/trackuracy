@@ -223,13 +223,15 @@ Hero Image
 }
 
 .coverage-videos {
-  /* Nothing I put in here works */
+  display: flex;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* To keep aspect ratio */
+  padding-bottom: 28.125%;
   padding-top: 25;
+  width: 100%;
+  height: 0;
   overflow: hidden;
 }
 
@@ -311,6 +313,14 @@ Hero Image
   
   .tailored-text, .tailored-image, .tier-text, .tier-image {
     width: 100%;
+  }
+
+  .coverage-videos {
+    flex-direction: column;
+  }
+  
+  .video-container {
+    padding-bottom: 56.25%;
   }
 }
 
