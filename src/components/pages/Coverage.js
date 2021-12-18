@@ -6,76 +6,67 @@ import Image from 'react-bootstrap/Image';
 function Coverage(props) {
   return (
     <div className="pages">
+
       <h2>Customize Your Coverage</h2>
 
-      <p>
-        Tailor any tier of a Trackuracy system at the time of deployment to meet your needs and budget. 
-      </p>
+      <div className="coverage-text">
 
-      <Image
-        className="img-fluid mx-auto d-block"
-        src={CustomizeCoverage}
-        alt="Coverage Diagram"
-      />
+        <div className="tailored">
+          <div className="tailored-text">
+            <h3>TAILORED TIERS</h3>
 
-      <h3>DIFFERENT MARKETS, DIFFERENT NEEDS</h3>
+            <p>
+              Tailor any tier of a Trackuracy system at the time of deployment to meet your needs and budget.
+            </p>
+          </div>
 
-      <p>
-        Trackuracy is a scalable solution with configurations for simple tracking, monitoring access to restricted areas, or a comprehensive solution to identify asset location across your campus. Trackuracy offers three tracking tiers to provide varying levels of accuracy and functionality.
-      </p>
+          <div className="tailored-image">
+            <Image
+              className="img-fluid mx-auto d-block"
+              src={CustomizeCoverage}
+              alt="Coverage Diagram"
+            />
+          </div>
+        </div>
 
-      <Image
-        className="img-fluid mx-auto d-block"
-        src={TierChart}
-        alt="Real Time Location System Diagram"
-      />
+        <div className="tier">
+          <div className="tier-text">
+            <h3>DIFFERENT MARKETS, DIFFERENT NEEDS</h3>
 
-      <div
-        className="video mt-5 mb-5"
-        style={{
-          position: "relative",
-          paddingBottom: "56.25%" /* 16:9 */,
-          paddingTop: 25,
-          height: 0
-        }}
-      >
-        <iframe
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%"
-          }}
-          src={`https://www.youtube.com/embed/9rI9_O53eKM`}
-          frameBorder="0"
-          title="Trackuracy Video"
-        />
+            <p>
+              Trackuracy is a scalable solution with configurations for simple tracking, monitoring access to restricted areas, or a comprehensive solution to identify asset location across your campus. Trackuracy offers three tracking tiers to provide varying levels of accuracy and functionality.
+            </p>
+          </div>
+
+          <div className="tier-image">
+            <Image
+              className="img-fluid mx-auto d-block"
+              src={TierChart}
+              alt="Real Time Location System Diagram"
+            />
+          </div>
+        </div>
       </div>
 
-      <div
-        className="video mt-5 mb-5"
-        style={{
-          position: "relative",
-          paddingBottom: "56.25%" /* 16:9 */,
-          paddingTop: 25,
-          height: 0
-        }}
-      >
-        <iframe
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%"
-          }}
-          src={`https://www.youtube.com/embed/9BDh3QqpMh4`}
-          frameBorder="0"
-          title="Trackuracy Video"
-        />
-      </div>
+      <div className="coverage-videos">
+        <div className="video-container">
+          <iframe
+            className="cvideo1"
+            src={`https://www.youtube.com/embed/9rI9_O53eKM`}
+            frameBorder="0"
+            title="Trackuracy Video"
+          />
+        </div>
 
+        <div className="video-container">
+          <iframe
+            className="cvideo2"
+            src={`https://www.youtube.com/embed/9BDh3QqpMh4`}
+            frameBorder="0"
+            title="Trackuracy Video"
+          />
+        </div>
+      </div>
     </div>
   );
 }
