@@ -24,7 +24,7 @@ function Coverage(props) {
             <Image
               className="img-fluid mx-auto d-block"
               src={CustomizeCoverage}
-              alt="Coverage Diagram"
+              alt={"Coverage Diagram"}
             />
           </div>
         </div>
@@ -42,7 +42,7 @@ function Coverage(props) {
             <Image
               className="img-fluid mx-auto d-block"
               src={TierChart}
-              alt="Real Time Location System Diagram"
+              alt={"Real Time Location System Diagram"}
             />
           </div>
         </div>

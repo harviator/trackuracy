@@ -1,33 +1,48 @@
 import React from "react";
 import Document from "../../assets/documents/brochure.pdf"
+import Brochure from "../../assets/images/brochure-snapshot.jpg"
+import KenwoodMain from "../../assets/images/kenwood-main.png"
+import Image from 'react-bootstrap/Image';
 
 function More(props) {
   return (
     <div className="pages">
-      <h2>Want More?</h2>
+      <div className="more-content">
+        <h2>Want More Information?</h2>
 
-      <a href={Document} target="_blank" rel="noreferrer">Download Brochure</a>
+        <div className="more-info">
+          <div className="more-brochure">
+            <h3>TRACKURACY BROCHURE</h3>
+            <p>Download The Trackuracy Brochure:</p>
+            <a href={Document} target="_blank" rel="noreferrer">
+              <Image id="brochure" className="img-fluid mx-auto d-block" src={Brochure} alt={"Brochure Cover"} />
+            </a>
+          </div>
 
-      <h3 className="mt-5">TURNKEY SOLUTIONS FROM KENWOOD</h3>
+          <div className="more-contact">
+            <h3>CONTACT US</h3>
 
-      <p>
-        At JVCKENWOOD, we understand that our customers need turnkey solutions, not just equipment.  We’ve leveraged customer feedback, our dealer network, and our own experience and expertise across many industries, to understand customer challenges and integrate our products and services with proven technologies. Trackuracy integrates indoor and outdoor tracking with KENWOOD radio communication systems and provides the tools you need to secure your environment. We have the resources to identify the optimum combination of equipment and software for your needs, so you get a better result as well as a single source for purchasing and support.
-      </p>
+            <a id="kenwood-link" href="https://ca.jvckenwood.com/" target="_blank" rel="noreferrer">
+              <Image id="kenwood-main" className="img-fluid mx-auto d-block" src={KenwoodMain} alt={"JVC Kenwood"} />
+            </a>
 
-      <h3>CONTACT US</h3>
+            <address>
+              Email: <a id="email" href="mailto:trackuracy@ca.jvckenwood.com">trackuracy@ca.jvckenwood.com</a> <br />
+              JVCKENWOOD Canada Inc.<br />
+              6070 Kestrel Road<br />
+              Mississauga, ON L5T 1S8
+            </address>
+          </div>
+        </div>
 
-      <p>
-        JVCKENWOOD Canada Inc.<br />
-        6070 Kestrel Road <br />
-        Mississauga, ON L5T 1S8
-      </p>
+        <div className="more-turnkey">
+          <h3>TURNKEY SOLUTIONS FROM KENWOOD</h3>
 
-      <a href="mailto:trackuracy@ca.jvckenwood.com">trackuracy@ca.jvckenwood.com</a>
-
-      <br />
-
-      <a href="https://ca.jvckenwood.com/" target="_blank" rel="noreferrer">Kenwood</a>
-
+          <p>
+            At JVCKENWOOD, we understand that our customers need turnkey solutions, not just equipment.  We’ve leveraged customer feedback, our dealer network, and our own experience and expertise across many industries, to understand customer challenges and integrate our products and services with proven technologies. Trackuracy integrates indoor and outdoor tracking with KENWOOD radio communication systems and provides the tools you need to secure your environment. We have the resources to identify the optimum combination of equipment and software for your needs, so you get a better result as well as a single source for purchasing and support.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

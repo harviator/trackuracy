@@ -205,9 +205,7 @@ Hero Image
 
 .about-gallery img {
   object-fit: cover;
-  /* margin-top: 8px; */
   height: 100%;
-  /* vertical-align: middle; */
   width: 100%;
 }
 
@@ -253,6 +251,25 @@ Hero Image
   height: 100%;
 }
 
+/* Class Selectors For More Page */
+
+.more-info {
+  display: flex;
+}
+
+.more-brochure, .more-contact {
+  width: 50%;
+  margin: 10px;
+}
+
+.more-contact {
+  padding: 10px;
+}
+
+.more-brochure h3, .more-contact h3, .more-turnkey h3 {
+  margin-top: 1em;
+}
+
 /* ID Selectors */
 
 #navbar {
@@ -289,10 +306,53 @@ Hero Image
   padding: 10px;
 }
 
+#brochure:hover {
+  box-shadow: 0px 0px 15px var(--text);
+}
+
+#kenwood-main {
+  max-height: 150px;
+  transition: border .15s linear;
+}
+
+#kenwood-main:hover {
+  border: 5px solid var(--text);
+  border-radius: 3px;
+}
+
+#email {
+  position:relative;
+  text-decoration: none;
+  color: var(--text);
+}
+
+#email:hover {
+  color: var(--midblue);
+}
+
+#email::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--midblue);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#email:hover::before {
+  transform: scaleX(1);
+}
+
 #kenwoodMain, #facebook, #instagram, #linkedin, #twitter, #youtube {
   margin: 5px;
   height: 30px;
 }
+
 
 /* Media Queries */
 
@@ -322,6 +382,7 @@ Hero Image
   .video-container {
     padding-bottom: 56.25%;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -355,5 +416,31 @@ Hero Image
 
   .about-images {
     display: none;
+  }
+
+  /* More Page */
+  .more-info {
+    flex-direction: column;
+  }
+  
+  .more-brochure, .more-contact {
+    width: 100%;
+    margin: 0;
+  }
+
+  .more-contact {
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  
+  /* More Page */
+
+  #brochure {
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
   }
 }
