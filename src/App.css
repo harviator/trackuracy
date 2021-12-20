@@ -8,10 +8,6 @@
   --text: #000230;
 }
 
-/* * {
-  border: 1px solid red;
-} */
-
 html, body {
   height: 100%;
   margin: 0;
@@ -64,7 +60,6 @@ footer {
 .pages {
   padding: 75px 5vw 10vh 5vw;
   background-color: var(--white);
-  border: 1px solid red;
 }
 
 /* Class Selectors For Home Page */
