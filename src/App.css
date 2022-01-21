@@ -1,9 +1,9 @@
 :root {
   --lghtrblue: #e7f3fd;
   --lghtblue: #87C1f5;
-  --midblue: #0090DC;
-  --dkblue: #0061AB;
-  --purple: #AB74C3;
+  --midblue: #0090dc;
+  --dkblue: #0061ab;
+  --purple: #ab74c3;
   --white: #fff;
   --text: #000230;
 }
@@ -45,7 +45,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid var(--purple);
+  border-top: 1px solid var(--midblue);
   padding: 0 8px 0 8px;
   font-size: 12px;
   background-color: var(--white);
@@ -109,10 +109,11 @@ Hero Image
 
 .intro-content {
   display: flex;
+  flex-direction: column;
 }
 
 .intro-text {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -123,12 +124,18 @@ Hero Image
   padding: 10px;
   background-color: var(--lghtrblue);
   border-radius: 5px;
+  
+}
+
+.box-1, .box-2, .box-3 {
+  box-shadow: 0px 10px 10px rgb(171, 116, 195, 0.2);
+  filter: drop-shadow(0px 4px 4px rgb(0, 144, 220, 0.25));
 }
 
 .box-4 {
   background: #87C1f5 url(./assets/images/airports.jpg) no-repeat 50% 60%;
   background-size: cover;
-  width: 50%;
+  height: 300px;
 }
 
 .video {
@@ -137,10 +144,11 @@ Hero Image
 
 .tracking-content {
   display: flex;
+  flex-direction: column;
 }
 
 .tracking-text {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -164,8 +172,12 @@ Hero Image
   display: flex;
 }
 
-.about-text, .about-images {
-  width: 50%;
+.about-text {
+  width: 100%;
+}
+
+.about-images {
+  display: none;
 }
 
 .about-text h3 {
@@ -177,51 +189,30 @@ Hero Image
   border-radius: 5px;
 }
 
-.about-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-gallery {
-  list-style: none;
-  padding: 0;
-  margin: 5px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-gallery li {
-  flex: 1 1 125px;
-  margin: 3px;
-}
-
-.about-gallery img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
 /* Class Selectors For Coverage Page */
+
+.video-container {
+  padding-bottom: 56.25%;
+}
+
 .tailored, .tier {
   display: flex;
   margin-top: 2em;
+  flex-direction: column;
 }
 
 .tailored-text, .tailored-image, .tier-text, .tier-image {
-  width: 50%;
+  width: 100%;
   margin: 5px;
 }
 
 .coverage-videos {
   display: flex;
+  flex-direction: column;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 28.125%;
   padding-top: 25;
   width: 100%;
   height: 0;
@@ -250,15 +241,16 @@ Hero Image
 
 .more-info {
   display: flex;
+  flex-direction: column;
 }
 
 .more-brochure, .more-contact {
-  width: 50%;
-  margin: 10px;
+  width: 100%;
+  margin: 0;
 }
 
 .more-contact {
-  padding: 10px;
+  padding: 0;
 }
 
 .more-brochure h3, .more-contact h3, .more-turnkey h3 {
@@ -270,10 +262,11 @@ Hero Image
 #navbar {
   background-color: var(--white);
   padding: 2px 8px;
-  border-bottom: 1px solid var(--midblue);
+  /* border-bottom: 1px solid rgba(0,0,0,.1); */
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
+  filter: drop-shadow(0px 4px 4px rgb(0, 2, 48, 0.25));
 }
 
 #trackuracy-main {
@@ -281,7 +274,7 @@ Hero Image
 }
 
 #trackuracy {
-  width: 30%;
+  width: 60%;
 }
 
 #video {
@@ -296,12 +289,15 @@ Hero Image
 }
 
 #rtls {
-  width: 50%;
+  width: 100%;
   margin: 5px;
   padding: 10px;
 }
 
-#brochure:hover {
+#brochure {
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
   box-shadow: 0px 0px 15px var(--text);
 }
 
@@ -351,91 +347,128 @@ Hero Image
 
 /* Media Queries */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (min-width: 500px) { */
+  
+  /* More Page */
+
+  /* #brochure {
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   
   /* Home Page */
   #trackuracy {
-    width: 60%;
+    width: 30%;
   }
-}
 
-@media screen and (max-width: 800px) {
-  
   /* Coverage Page */
-  .tailored, .tier {
-    flex-direction: column;
-  }
-  
   .tailored-text, .tailored-image, .tier-text, .tier-image {
-    width: 100%;
+    width: 50%;
   }
 
   .coverage-videos {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
   
   .video-container {
-    padding-bottom: 56.25%;
+    padding-bottom: 28.125%;
   }
-
 }
 
-@media screen and (max-width: 1200px) {
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Class Selectors */
 
   /* Home Page */
   .intro-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .intro-text {
-    width: 100%;
+    width: 50%;
   }
 
   .box-4 {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 50%;
   }
 
   .tracking-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .tracking-text, #rtls {
-    width: 100%;
+  .tracking-text {
+    width: 70%;
   }
 
   /* About Page */
-  .about-text {
-    width: 100%;
+
+  .about-text, .about-images {
+    width: 50%;
   }
 
   .about-images {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-gallery {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about-gallery li {
+    flex: 1 1 125px;
+    margin: 3px;
+  }
+  
+  .about-gallery img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 
   /* More Page */
   .more-info {
-    flex-direction: column;
+    flex-direction: row;
   }
-  
+
   .more-brochure, .more-contact {
-    width: 100%;
-    margin: 0;
+    width: 50%;
+    margin: 10px;
   }
-
-  .more-contact {
-    padding: 0;
-  }
-
-}
-
-@media screen and (min-width: 500px) {
   
+  .more-contact {
+    padding: 10px;
+  }
+
+  /* ID Selectors */
+
+  /* Home Page */
+  #rtls {
+    width: 50%;
+  }
+
   /* More Page */
 
   #brochure {
-    max-width: 300px;
-    padding: 10px;
-    margin: 10px;
+    box-shadow: none;
+  }
+
+  #brochure:hover {
+    box-shadow: 0px 0px 15px var(--text);
   }
 }
