@@ -35,7 +35,7 @@ function Footer(props) {
                 <img id="youtube" src={YouTube} alt="YouTube Logo" />
             </a>
 
-            <p className="m-0">&copy; {new Date().getFullYear()} JVCKenwood Canada Inc.</p>
+            <p className="m-0">&copy; {new Date().getFullYear()} JVCKENWOOD Canada Inc.</p>
 
         </footer >
     );
