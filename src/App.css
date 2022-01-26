@@ -356,8 +356,22 @@ Hero Image
   }
 
   /* Coverage Page */
+  .tailored, .tier {
+    flex-direction: row;
+  }
+
   .tailored-text, .tailored-image, .tier-text, .tier-image {
     width: 50%;
+  }
+
+  .tailored-text, .tier-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tailored-text h3, .tier-text h3 {
+    margin-bottom: 20px;
   }
 
   .coverage-videos {
@@ -428,6 +442,12 @@ Hero Image
     object-fit: cover;
     height: 100%;
     width: 100%;
+  }
+
+  /* Coverage Page */
+  .tailored-text p, .tier-text p {
+    font-size: 24px;
+    line-height: 50px;
   }
 
   /* More Page */
