@@ -51,6 +51,15 @@ footer {
   background-color: var(--white);
 }
 
+footer > a {
+  transition: 0.3s ease all;
+}
+
+footer > a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease all;
+}
+
 /* Class Selectors */
 
 .homepage {
