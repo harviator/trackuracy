@@ -1,4 +1,5 @@
 :root {
+  --bckgrnd-color: #f2f2f2;
   --lghtrblue: #e7f3fd;
   --lghtblue: #87C1f5;
   --midblue: #0090dc;
@@ -131,29 +132,32 @@ Hero Image
 .box {
   margin: 5px;
   padding: 10px;
-  background-color: var(--lghtrblue);
-  border-radius: 5px;
-  
 }
 
-.box-1, .box-2, .box-3 {
+.box-1 {
+  background-color: var(--bckgrnd-color);
   box-shadow: 0px 10px 10px rgb(171, 116, 195, 0.2);
   filter: drop-shadow(0px 4px 4px rgb(0, 144, 220, 0.25));
+  margin-bottom: 30px;
 }
 
-.box-4 {
+.box-2 {
   background: #87C1f5 url(./assets/images/airports.jpg) no-repeat 50% 60%;
   background-size: cover;
   height: 300px;
+  margin: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .video {
-  margin: 10px 5px;
+  margin: 10px 5px 30px 5px;
 }
 
 .tracking-content {
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 
 .tracking-text {
@@ -161,19 +165,15 @@ Hero Image
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 5px;
+  margin: 5px 0 30px 0;
   padding: 10px;
+  box-shadow: 0px 10px 10px rgb(171, 116, 195, 0.2);
+  filter: drop-shadow(0px 4px 4px rgb(0, 144, 220, 0.25));
+  background-color: var(--bckgrnd-color);
 }
 
 .tracking-text h3 {
   margin: 10px 0px;
-}
-
-.tracking-text p {
-  margin: 5px;
-  padding: 10px;
-  background-color: var(--lghtrblue);
-  border-radius: 5px;
 }
 
 /* Class Selectors For About Page */
@@ -271,7 +271,6 @@ Hero Image
 #navbar {
   background-color: var(--white);
   padding: 2px 8px;
-  /* border-bottom: 1px solid rgba(0,0,0,.1); */
   width: 100%;
   position: fixed;
   z-index: 3;
@@ -407,7 +406,7 @@ Hero Image
     width: 50%;
   }
 
-  .box-4 {
+  .box-2 {
     height: auto;
     width: 50%;
   }
@@ -417,7 +416,8 @@ Hero Image
   }
 
   .tracking-text {
-    width: 70%;
+    width: 50%;
+    margin-right: 10px;
   }
 
   /* About Page */
@@ -478,6 +478,9 @@ Hero Image
   /* Home Page */
   #rtls {
     width: 50%;
+    /* height: 70%; */
+    margin: 5px 5px 30px 10px;
+    align-self: center;
   }
 
   /* More Page */

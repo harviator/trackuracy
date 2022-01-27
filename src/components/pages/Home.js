@@ -22,18 +22,18 @@ function Home(props) {
           <div className="intro-text">
             <p className="box box-1">
               With Trackuracy, you can improve safety by tracking assets within your buildings, across all your campus locations, and in between buildings. Even while taking to the road in company vehicles, your view switches seamlessly between indoor and outdoor tracking. Best of all, it happens within a single application.
-            </p>
+            <br/>
 
-            <p className="box box-2">
+            <br/>
               In our fast-moving world, knowing the locations of the assets you rely on is critical. An integrated solution should work anywhere you need it to - indoors or outdoors. It’s common for companies to use GPS to locate assets outdoors. However, satellite signals typically are not strong enough to penetrate the roof of a building or through walls to provide accurate information for indoor location. GPS is generally inadequate for precise indoor location, performs poorly in multilevel structures, and can quickly drain a device’s battery. For in-building positioning, you need a solution that is designed specifically for this purpose.
-            </p>
+            <br/>
 
-            <p className="box box-3">
+            <br/>
               You need Trackuracy, the Real Time Location System (RTLS) from JVCKENWOOD. Trackuracy integrates indoor and outdoor tracking with KENWOOD radio communication systems and provides the tools you need to secure your environment.
             </p>
           </div>
 
-          <div className="box box-4" id="airport">
+          <div className="box box-2" id="airport">
           </div>
         </div>
 
@@ -67,9 +67,9 @@ function Home(props) {
 
             <p>
               GPS based tracking isn’t new. Whether you call it AVL or Fleet Management - tools to understand where vehicles are in near-real-time have been around for years. What is new is integrating indoor tracking with outdoor tracking in a single, easy to use platform.
-            </p>
+            <br />
 
-            <p>
+            <br />
               Trackuracy has standard outdoor functionality, such as alerts when assets approach a hazardous area. The system also comes with alerting and reporting built around speed limits and adds basic fleet maintenance tracking. The built-in tools allow users to track radio maintenance and repairs separate from their vehicle fleet.
             </p>
 
@@ -81,7 +81,7 @@ function Home(props) {
           </div>
 
           <Image
-            className="img-fluid mx-auto d-block"
+            // className="img-fluid mx-auto d-block"
             id="rtls"
             src={Rtls}
             alt={"Real Time Location System Diagram"}
