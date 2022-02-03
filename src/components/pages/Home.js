@@ -81,7 +81,6 @@ function Home(props) {
           </div>
 
           <Image
-            // className="img-fluid mx-auto d-block"
             id="rtls"
             src={Rtls}
             alt={"Real Time Location System Diagram"}
