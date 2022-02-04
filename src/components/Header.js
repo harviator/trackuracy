@@ -29,9 +29,9 @@ function Header(props) {
                         <Nav.Link as={Link} to="/coverage" href="/coverage">
                             Customize Your Coverage
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/case" href="/case">
+                        {/* <Nav.Link as={Link} to="/case" href="/case">
                             Case Studies
-                        </Nav.Link>
+                        </Nav.Link> */}
                         <Nav.Link as={Link} to="/more" href="/more">
                             Find Out More
                         </Nav.Link>

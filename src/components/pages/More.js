@@ -1,7 +1,7 @@
 import React from "react";
-import Document from "../../assets/documents/brochure.pdf"
-import Brochure from "../../assets/images/brochure-snapshot.jpg"
-import KenwoodMain from "../../assets/images/kenwood-main.png"
+import Document from "../../assets/documents/brochure.pdf";
+import Brochure from "../../assets/images/brochure-snapshot.jpg";
+import KenwoodWhite from "../../assets/images/kenwood-white.png";
 import Image from 'react-bootstrap/Image';
 
 function More(props) {
@@ -23,11 +23,12 @@ function More(props) {
             <h3>CONTACT US</h3>
 
             <a id="kenwood-link" href="https://ca.jvckenwood.com/" target="_blank" rel="noreferrer">
-              <Image id="kenwood-main" className="img-fluid mx-auto d-block" src={KenwoodMain} alt={"JVC Kenwood"} />
+              <Image id="kenwood-white" className="img-fluid mx-auto d-block" src={KenwoodWhite} alt={"JVCKenwood logo"} />
             </a>
 
             <address>
-              Email: <a id="email" href="mailto:trackuracy@ca.jvckenwood.com">trackuracy@ca.jvckenwood.com</a> <br />
+              Email: <a id="email" href="mailto:trackuracy@ca.jvckenwood.com">trackuracy@ca.jvckenwood.com</a><br />
+              <br />
               JVCKENWOOD Canada Inc.<br />
               6070 Kestrel Road<br />
               Mississauga, ON L5T 1S8

@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Coverage from './components/pages/Coverage';
-import Case from './components/pages/Case';
+// import Case from './components/pages/Case';
 import More from './components/pages/More';
 import Footer from './components/Footer';
 
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/coverage" element={<Coverage />} />
-          <Route exact path="/case" element={<Case />} />
+          {/* <Route exact path="/case" element={<Case />} /> */}
           <Route exact path="/more" element={<More />} />
         </Routes>
         <Footer />
