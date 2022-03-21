@@ -93,6 +93,9 @@ function About(props) {
           id="collage"
           src={Collage}
           alt={"A collage of images of Trackuracy uses in different industries"}
+          // id="cover"
+          // src={Cover}
+          // alt={"Woman at a desk using Tackuracy software"}
         />
       </div>
     </div>
