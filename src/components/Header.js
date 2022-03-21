@@ -4,7 +4,6 @@ import { Nav, Navbar } from "react-bootstrap";
 import trackuracyMain from "../assets/images/trackuracy-main.png";
 
 function Header(props) {
-
     return (
         <header>
             <Navbar id="navbar" collapseOnSelect expand="lg">
