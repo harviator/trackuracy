@@ -10,6 +10,7 @@ import React from "react";
 // import Stadiums from "../../assets/images/stadiums.jpg";
 // import Warehousing from "../../assets/images/warehousing.jpg";
 import Cover from "../../assets/images/brochure-cover.jpg";
+import Collage from "../../assets/images/trackuracy-collage.jpg";
 import Image from 'react-bootstrap/Image';
 
 function About(props) {
@@ -45,7 +46,7 @@ function About(props) {
 
       <div className="cover-image">
         <Image
-          id="cover1"
+          id="cover"
           src={Cover}
           alt={"Woman at a desk using Tackuracy software"}
         />
@@ -65,84 +66,9 @@ function About(props) {
           <li>Access to historical data and analytics </li>
           <li>Automate actions based on location data </li>
         </ul>
-
       </div>
 
-
-
       <div className="about-desktop">
-        {/* <ul className="about-gallery">
-            <li>
-              <img
-                id="casino"
-                src={Casino}
-                alt="Casino"
-              />
-            </li>
-            <li>
-              <img
-                id="education"
-                src={Education}
-                alt="Education"
-              />
-            </li>
-            <li>
-              <img
-                id="healthcare"
-                src={Healthcare}
-                alt="Healthcare"
-              />
-            </li>
-            <li>
-              <img
-                id="airport"
-                src={Airport}
-                alt="Airport"
-              />
-            </li>
-            <li>
-              <img
-                id="manufacturing"
-                src={Manufacturing}
-                alt="Manufacturing"
-              />
-            </li>
-            <li>
-              <img
-                id="oil-gas"
-                src={OilGas}
-                alt="Oil & Gas Industry"
-              />
-            </li>
-            <li>
-              <img
-                id="pexels"
-                src={Pexels}
-                alt="Mining"
-              />
-            </li>
-            <li>
-              <img
-                id="stadiums"
-                src={Stadiums}
-                alt="Stadiums"
-              />
-            </li>
-            <li>
-              <img
-                id="warehousing"
-                src={Warehousing}
-                alt="Warehousing"
-              />
-            </li>
-            <li>
-              <img
-                id="hospitality"
-                src={Hospitality}
-                alt="Hospitality"
-              />
-            </li>
-          </ul> */}
 
         <div className="about-full-text">
           <h3>FEATURES & BENEFITS</h3>
@@ -181,9 +107,9 @@ function About(props) {
         </div>
 
         <Image
-          id="cover"
-          src={Cover}
-          alt={"Woman at a desk using Tackuracy software"}
+          id="collage"
+          src={Collage}
+          alt={"A collage of images of Trackuracy uses in different industries"}
         />
       </div>
     </div>

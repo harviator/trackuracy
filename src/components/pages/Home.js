@@ -37,11 +37,11 @@ function Home(props) {
           </div>
         </div>
 
-        <div
+        { /* <div
           className="video"
           style={{
             position: "relative",
-            paddingBottom: "56.25%" /* 16:9 */,
+            paddingBottom: "56.25%",
             paddingTop: 25,
             height: 0
           }}
@@ -58,7 +58,7 @@ function Home(props) {
             frameBorder="0"
             title="Trackuracy Video"
           />
-        </div>
+        </div> */ }
 
         <div className="tracking-content">
           <div className="tracking-text">
@@ -85,7 +85,6 @@ function Home(props) {
             src={Rtls}
             alt={"Real Time Location System Diagram"}
           />
-
         </div>
 
       </div>
