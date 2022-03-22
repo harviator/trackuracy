@@ -16,11 +16,6 @@ html, body {
   color: var(--text);
 }
 
-/* body {
-  max-width: 1500px;
-  margin: 0 auto;
-} */
-
 /* Element Selectors */
 
 h1 {
@@ -69,22 +64,21 @@ footer > a:hover {
 
 /* Class Selectors */
 
-.homepage {
+.homepage, .about-page, .pages {
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.homepage {
   padding: 45px 0px 10vh 0px;
 }
 
 .about-page {
-  max-width: 1500px;
-  margin: 0 auto;
   padding: 75px 0px 10vh 0px;
   background-color: var(--white);
 }
 
 .pages {
-  max-width: 1500px;
-  margin: 0 auto;
   padding: 75px 5vw 10vh 5vw;
   background-color: var(--white);
 }
