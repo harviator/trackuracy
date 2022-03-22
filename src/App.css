@@ -69,18 +69,20 @@ footer > a:hover {
   margin: 0 auto;
 }
 
+.about-page, .pages {
+  background-color: var(--white);
+}
+
 .homepage {
   padding: 45px 0px 10vh 0px;
 }
 
 .about-page {
   padding: 75px 0px 10vh 0px;
-  background-color: var(--white);
 }
 
 .pages {
   padding: 75px 5vw 10vh 5vw;
-  background-color: var(--white);
 }
 
 /* Class Selectors For Home Page */
@@ -407,7 +409,6 @@ Hero Image
   height: 30px;
 }
 
-
 /* Media Queries */
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -458,7 +459,6 @@ Hero Image
     max-width: 300px;
   }
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
