@@ -1,14 +1,4 @@
 import React from "react";
-// import Airport from "../../assets/images/airports.jpg";
-// import Casino from "../../assets/images/casinos.jpg";
-// import Education from "../../assets/images/education.jpg";
-// import Healthcare from "../../assets/images/healthcare.jpg";
-// import Hospitality from "../../assets/images/hospitality.jpg";
-// import Manufacturing from "../../assets/images/manufacturing.jpg";
-// import OilGas from "../../assets/images/oil-gas.jpg";
-// import Pexels from "../../assets/images/pexels.jpg";
-// import Stadiums from "../../assets/images/stadiums.jpg";
-// import Warehousing from "../../assets/images/warehousing.jpg";
 import Cover from "../../assets/images/brochure-cover.jpg";
 import Collage from "../../assets/images/trackuracy-collage.jpg";
 import Image from 'react-bootstrap/Image';
@@ -89,14 +79,13 @@ function About(props) {
             <li>Automate actions based on location data </li>
           </ul>
         </div>
-        <Image
-          id="collage"
-          src={Collage}
-          alt={"A collage of images of Trackuracy uses in different industries"}
-          // id="cover"
-          // src={Cover}
-          // alt={"Woman at a desk using Tackuracy software"}
-        />
+        <div className="about-image">
+          <Image
+            id="collage"
+            src={Collage}
+            alt={"A collage of images of Trackuracy uses in different industries"}
+          />
+        </div>
       </div>
     </div>
   );

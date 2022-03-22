@@ -502,8 +502,8 @@ Hero Image
 
   .about-desktop {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin: 0px 5vw 0px 5vw;
   }
 
@@ -527,25 +527,12 @@ Hero Image
   .about-full-text ul:first-of-type {
     margin-bottom: 40px;
   }
-  
-  .about-gallery {
-    list-style: none;
-    padding: 0;
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .about-gallery li {
-    flex: 1 1 125px;
-    margin: 3px;
-  }
-  
-  .about-gallery img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+
+  .about-image {
+    width: 50%;
+    background: linear-gradient(0deg, rgba(0,2,48,1) 0%, rgba(45,45,45,1) 100%);
+    margin: 5px;
+    margin-left: 30px;
   }
 
   /* Coverage Page */
@@ -595,9 +582,11 @@ Hero Image
   /* About Page */
   
   #collage {
-    width: 50%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     align-self: center;
-    margin-left: 20px;
+    clip-path: polygon(0 16%, 100% 6%, 100% 85%, 0 93%);
   }
 
   /* More Page */
