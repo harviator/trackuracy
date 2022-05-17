@@ -26,8 +26,8 @@ function More(props) {
               Email: <a id="email" href="mailto:trackuracy@ca.jvckenwood.com">trackuracy@ca.jvckenwood.com</a><br />
               <br />
               JVCKENWOOD Canada Inc.<br />
-              6070 Kestrel Road<br />
-              Mississauga, ON L5T 1S8
+              6685 Millcreek Drive, Unit 8<br />
+              Mississauga, ON L5N 5M5
             </address>
           </div>
         </div>
