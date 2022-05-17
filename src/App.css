@@ -155,7 +155,7 @@ Hero Image
 }
 
 .box-2 {
-  background: #87C1f5 url(./assets/images/airports.jpg) no-repeat 50% 60%;
+  background: #87C1f5 url(./assets/images/mining.jpg) no-repeat 50% 60%;
   background-size: cover;
   height: 300px;
   margin: 5px;
@@ -367,8 +367,10 @@ Hero Image
 
 #kenwood-white {
   max-height: 150px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  padding: 10px;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 4px 4px rgb(0, 0, 0, 0.25));
 }
 
 #kenwood-white:hover {
