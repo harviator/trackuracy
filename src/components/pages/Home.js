@@ -1,5 +1,6 @@
 import React from "react";
 import Mine from "../../assets/video/mine.mp4";
+import Markers from "../../assets/video/trackuarcy_markers.mp4"
 import Rtls from "../../assets/images/rtls.png";
 import Trackuracy from "../../assets/images/trackuracy-white.png";
 import Image from 'react-bootstrap/Image';
@@ -8,7 +9,7 @@ function Home(props) {
   return (
     <div className="homepage">
       <div className="hero">
-        <video autoPlay loop muted playsInline id="video" src={Mine}>
+        <video autoPlay loop muted playsInline id="video" src={Markers}>
         </video>
         <div className="hero-content">
           <img id="trackuracy" src={Trackuracy} alt="Trackuracy Logo" />
