@@ -507,7 +507,6 @@ footer > a:hover {
 
   .about-image {
     width: 50%;
-    background: linear-gradient(0deg, rgba(0,2,48,1) 0%, rgba(45,45,45,1) 100%);
     margin: 5px;
     margin-left: 30px;
   }
@@ -563,7 +562,6 @@ footer > a:hover {
     height: 100%;
     width: 100%;
     align-self: center;
-    clip-path: polygon(0 16%, 100% 6%, 100% 85%, 0 93%);
   }
 
   /* More Page */
