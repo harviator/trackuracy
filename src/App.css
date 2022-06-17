@@ -108,23 +108,6 @@ footer > a:hover {
   padding: 1vh 5vw;
 }
 
-/* 
-Hero Image
-
-.hero {
-  background: var(--midblue) url(./assets/images/trackuracy-hero.jpg) no-repeat;
-  background-size: cover;
-  height: 339px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0 20px;
-  justify-content: flex-end;
-  color: white;
-  font-size: 1.5rem;
-  text-align: right;
-} */
-
 .content {
   margin: 20px 5vw 25px 5vw;
   text-align: justify;
@@ -486,7 +469,7 @@ Hero Image
 
   .tracking-text {
     width: 50%;
-    margin-left: 10px; /* Will have to switch back to margin-right when videos come back*/
+    margin-left: 10px; /* Will have to switch back to margin-right when videos come back */
     order: 2;
   }
 
@@ -498,8 +481,6 @@ Hero Image
 
   .about-desktop {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     margin: 0px 5vw 0px 5vw;
   }
 
